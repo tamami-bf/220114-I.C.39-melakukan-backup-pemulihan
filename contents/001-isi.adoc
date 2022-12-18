@@ -1,0 +1,44 @@
+
+== Tanggal pencadangan atau pemulihan
+
+[.text-justify]
+Kegiatan ini dilakukan pada tanggal 14 Januari 2022
+
+== Nama Dataset yang dicadangkan 
+
+[.text-justify]
+Data set yang dicadangan adalah data SISMIOP
+
+== Media Penyimpanan
+
+[.text-justify]
+Media penyimpanan untuk hasil _backup_ dilakukan pada DAS (_Direct Attach Storage_) di Bapenda Kab. Brebes
+
+== Nama File Hasil Pencadangan
+
+[.text-justify]
+Hasil _backup_ disimpan dalam berkas bernama 220114.0821.SISMIOP.DMP
+
+== Dokumentasi Pelaksanaan
+
+[.text-justify]
+Langkah-langkah yang dilakukan untuk melakukan _backup_ data ini adalah seperti berikut :
+
+[.text-justify]
+1. Melakukan akses _remote_ ke peladen basis data.
++
+2. Melakukan _backup_ data set dengan perintah berikut :
++
+----
+expdp pbb@sismiop schemas=pbb dumpfile=220114.0821.SISMIOP.DMP logfile=220114.0821.SISMIOP-IMP.LOG
+----
++
+3. Berkas dipindahkan ke _drive_ DAS.
+
+== Lisensi
+
+image::by-sa.png[pdfwidth=25%]
+
+[.text-justify]
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/.
